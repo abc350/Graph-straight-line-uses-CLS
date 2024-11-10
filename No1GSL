@@ -1,0 +1,116 @@
+#include <iostream> 
+#include <cmath>                
+using namespace std;
+#define CLS         (cout << "\033[2J") 
+#define LOCATE(z,s) (cout <<"\033["<<(z)<<';'<<(s)<<'H')
+#define PI        3.1415926536
+#define START     0.0           
+#define END     (2.0 * PI)      
+#define PNT     9
+#define STEP  ((END-START)/PNT) 
+#define x1      25
+#define y1    10
+
+int a,b,c,k;
+
+int main()
+ {    
+ do{
+    cin >> a;
+    int  row, col;
+    double x;
+    CLS;
+     LOCATE(x1,y1);            //yA=10                  
+     for( col = 10; col < 89;++col) 
+     {
+       cout << 
+       ((col - y1) % 6?  '-' : '.');
+     }                  
+     
+      int begin= y1;     //yA=10
+      int end= (begin) + a-1;
+      
+   for( col = begin ;  col <= end  ;  ++col) 
+     { 
+     if(a==1){
+        x = (col-y1) +1; //yA=10
+        row = (int)(x1 - (x-1));     //xA=25
+       LOCATE( row, col);       
+       cout << "*";
+       /*
+       x = (col-y1) +4; //yA=10
+       row = (int)(x1 - (x-1));     //xA=25
+       row++;
+       col++;
+       LOCATE( row, col);       
+       cout << "**";*/
+     }
+     else if(a==2){
+          x = (col-y1) +1; //yA=10
+        row = (int)(x1 - (x-1));     //xA=25
+       LOCATE( row, col);       
+       cout << "*";
+     }
+     else if(a==3){
+        x = (col-y1) +1; //yA=10
+        row = (int)(x1 - (x-1));     //xA=25
+       LOCATE( row, col);       
+       cout << "*";
+     }
+     else if(a==4){
+        x = (col-y1) +1; //yA=10
+        row = (int)(x1 - (x-1));     //xA=25
+       LOCATE( row, col);       
+       cout << "*";
+     }
+     else if(a==5){
+          x = (col-y1) +1; //yA=10
+        row = (int)(x1 - (x-1));     //xA=25
+       LOCATE( row, col);       
+       cout << "*";
+     }
+     else if(a==6){
+          x = (col-y1) +1; //yA=10
+        row = (int)(x1 - (x-1));     //xA=25
+       LOCATE( row, col);       
+       cout << "*";
+     }
+     else if(a==7){
+          x = (col-y1) +1; //yA=10
+        row = (int)(x1 - (x-1));     //xA=25
+       LOCATE( row, col);       
+       cout << "*";
+     }
+     else if(a==8){
+          x = (col-y1) +1; //yA=10
+        row = (int)(x1 - (x-1));     //xA=25
+       LOCATE( row, col);       
+       cout << "*";
+     }
+     else if(a==9){
+          x = (col-y1) +1; //yA=10
+        row = (int)(x1 - (x-1));     //xA=25
+       LOCATE( row, col);       
+       cout << "*";
+     }
+     else if(a==10){
+          x = (col-y1) +1; //yA=10
+        row = (int)(x1 - (x-1));     //xA=25
+       LOCATE( row, col);       
+       cout << "*";
+     }
+     else CLS;          
+     }
+
+      k++;
+ }while(k<10);
+// cout << endl;
+      
+      LOCATE(70,1);          
+      return 0; 
+   }
+   
+   
+ //y=mx+c
+ //y=m*2+1
+   
